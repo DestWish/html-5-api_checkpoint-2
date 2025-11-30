@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<select id="storageSelect" onchange="getStorage()">
+  <option value="local">LocalStorage</option>
+  <option value="session">SessionStorage</option>
+</select>
+
+<br><br>
+
+<input id="keyInput" placeholder="Ключ">
+<input id="valueInput" placeholder="Значение">
+<button onclick="saveItem()">Сохранить</button>
+<button onclick="clearStorage()">Очистить хранилище</button>
+
+<br><br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Ключ</th>
+      <th>Значение</th>
+      <th>Удалить</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
